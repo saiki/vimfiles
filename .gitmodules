@@ -1,0 +1,39 @@
+[submodule "pack/pack/start/echodoc"]
+	path = pack/pack/start/echodoc
+	url = https://github.com/Shougo/echodoc
+[submodule "pack/pack/start/vim-surround"]
+	path = pack/pack/start/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "pack/pack/start/vim-markdown"]
+	path = pack/pack/start/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown
+[submodule "pack/pack/start/vim-better-whitespace"]
+	path = pack/pack/start/vim-better-whitespace
+	url = https://github.com/ntpeters/vim-better-whitespace
+[submodule "pack/pack/start/vim-dirvish"]
+	path = pack/pack/start/vim-dirvish
+	url = https://github.com/justinmk/vim-dirvish
+[submodule "pack/pack/start/ctrlp.vim"]
+	path = pack/pack/start/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim
+[submodule "pack/pack/start/ctrlp-extensions.vim"]
+	path = pack/pack/start/ctrlp-extensions.vim
+	url = https://github.com/sgur/ctrlp-extensions.vim
+[submodule "pack/pack/start/ctrlp-funky"]
+	path = pack/pack/start/ctrlp-funky
+	url = https://github.com/tacahiroy/ctrlp-funky
+[submodule "pack/pack/start/vim-localrc"]
+	path = pack/pack/start/vim-localrc
+	url = https://github.com/thinca/vim-localrc
+[submodule "pack/pack/start/vim-go"]
+	path = pack/pack/start/vim-go
+	url = https://github.com/fatih/vim-go
+[submodule "pack/pack/start/lightline.vim"]
+	path = pack/pack/start/lightline.vim
+	url = https://github.com/itchyny/lightline.vim
+[submodule "pack/pack/start/vim-bufferline"]
+	path = pack/pack/start/vim-bufferline
+	url = https://github.com/bling/vim-bufferline
+[submodule "pack/pack/start/gruvbox"]
+	path = pack/pack/start/gruvbox
+	url = https://github.com/morhetz/gruvbox
