@@ -37,3 +37,6 @@
 [submodule "pack/pack/start/gruvbox"]
 	path = pack/pack/start/gruvbox
 	url = https://github.com/morhetz/gruvbox
+[submodule "pack/pack/start/vim-alignta"]
+	path = pack/pack/start/vim-alignta
+	url = https://github.com/h1mesuke/vim-alignta.git
