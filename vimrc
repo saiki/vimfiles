@@ -39,6 +39,16 @@ set cmdheight=2
 set laststatus=2
 " 無名レジスタの内容を*レジスタにも入れる(要するにヤンクしたらクリップボードにコピー)
 set clipboard+=unnamed
+" バックアップディレクトリの指定
+if has('win32') || has ('win64')
+	set backupdir=$TEMP
+	set directory=$TEMP
+	set undodir=$TEMP
+else
+	set backupdir=$TMP
+	set directory=$TMP
+	set undodir=$TMP
+endif
 
 " 選択時に行末まで選択は改行は含まない
 vmap $ $h
@@ -116,7 +126,7 @@ noremap ; :
 noremap : ;
 
 function! s:settings()
-	echom 'hello.'
+	echom 'hello world!'
 	" start ctrlp setting
 	set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 	set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
