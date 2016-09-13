@@ -40,15 +40,16 @@ set laststatus=2
 " 無名レジスタの内容を*レジスタにも入れる(要するにヤンクしたらクリップボードにコピー)
 set clipboard+=unnamed
 " バックアップディレクトリの指定
-if has('win32') || has ('win64')
-	set backupdir=$TEMP
-	set directory=$TEMP
-	set undodir=$TEMP
-else
-	set backupdir=$TMP
-	set directory=$TMP
-	set undodir=$TMP
+:let $TMP_DIR=$TEMP
+if $TMP_DIR=="" || !isdirectory($TMP_DIR)
+	:let $TMP_DIR=$TMP
 endif
+if $TMP_DIR=="" || !isdirectory($TMP_DIR)
+	:let $TMP_DIR=$HOME."/tmp"
+endif
+set backupdir=$TMP_DIR
+set directory=$TMP_DIR
+set undodir=$TMP_DIR
 
 " 選択時に行末まで選択は改行は含まない
 vmap $ $h
@@ -121,7 +122,7 @@ if has("autocmd") && exists("+omnifunc")
 				\	endif
 endif
 
-" us配列用
+" 近いほうを使う
 noremap ; :
 noremap : ;
 
