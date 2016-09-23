@@ -39,17 +39,6 @@ set cmdheight=2
 set laststatus=2
 " 無名レジスタの内容を*レジスタにも入れる(要するにヤンクしたらクリップボードにコピー)
 set clipboard+=unnamed
-" バックアップディレクトリの指定
-:let $TMP_DIR=$TEMP
-if $TMP_DIR=="" || !isdirectory($TMP_DIR)
-	:let $TMP_DIR=$TMP
-endif
-if $TMP_DIR=="" || !isdirectory($TMP_DIR)
-	:let $TMP_DIR=$HOME."/tmp"
-endif
-set backupdir=$TMP_DIR
-set directory=$TMP_DIR
-set undodir=$TMP_DIR
 
 " .swp, .~, .un~\ファイルの作成先
 set directory=$HOME/tmp/vim
