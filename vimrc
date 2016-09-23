@@ -6,7 +6,7 @@ filetype plugin indent on
 set showcmd
 " 閉じ括弧が入力されたときに対応する括弧にわずかの間ジャンプする。
 set showmatch
-set cmdheight=1
+set cmdheight=2
 " 折りたたみ設定
 "set foldmethod=syntax
 set foldmethod=marker
@@ -39,6 +39,11 @@ set cmdheight=2
 set laststatus=2
 " 無名レジスタの内容を*レジスタにも入れる(要するにヤンクしたらクリップボードにコピー)
 set clipboard+=unnamed
+
+" .swp, .~, .un~\ファイルの作成先
+set directory=$HOME/tmp/vim
+set backupdir=$HOME/tmp/vim
+set undodir=$HOME/tmp/vim
 
 " 選択時に行末まで選択は改行は含まない
 vmap $ $h
