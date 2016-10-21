@@ -40,3 +40,6 @@ set visualbell t_vb=
 "set lines=81
 set columns=100
 "set columns=109
+
+" 透過の設定
+autocmd GUIEnter * set transparency=220
