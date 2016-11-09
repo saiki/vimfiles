@@ -40,3 +40,6 @@
 [submodule "pack/pack/start/vim-alignta"]
 	path = pack/pack/start/vim-alignta
 	url = https://github.com/h1mesuke/vim-alignta.git
+[submodule "pack/pack/start/editorconfig-vim"]
+	path = pack/pack/start/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git
