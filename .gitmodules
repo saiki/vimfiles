@@ -40,3 +40,6 @@
 [submodule "pack/pack/start/vim-alignta"]
 	path = pack/pack/start/vim-alignta
 	url = https://github.com/h1mesuke/vim-alignta.git
+[submodule "pack\\pack\\start\\typescript-vim"]
+	path = pack\\pack\\start\\typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
