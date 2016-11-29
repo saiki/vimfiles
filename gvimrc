@@ -1,19 +1,8 @@
 " フォント設定
-"set encoding=cp932
-"set guifontwide=MS_Gothic:h10
-"set guifontwide=Ricty_Diminished_Discord:h12:cSHIFTJIS
-"set guifontwide=Ricty_Diminished:h12:cSHIFTJIS
-"set guifontwide=Migu_1M:h10:cSHIFTJIS
-"set guifontwide=Source_Code_Pro:h11
-"set guifont=Terminal:h11:cSHIFTJIS
-set guifont=MS_Gothic:h9:cSHIFTJIS
-"set guifont=Source_Code_Pro:h11
-"set guifont=Ricty_Diminished_Discord:h12:cSHIFTJIS
-"set guifont=Ricty_Diminished:h12:cSHIFTJIS
-"set guifont=Migu_1M:h10:cSHIFTJIS
+set guifont=Ricty_Diminished_Discord:h11:cSHIFTJIS
 set ambiwidth=double
 "set encoding=utf8
-"set antialias
+set antialias
 
 " colorscheme
 "colorscheme molokai
