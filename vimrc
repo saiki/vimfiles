@@ -146,6 +146,7 @@ function! s:settings()
 	let g:bufferline_rotate = 1
 
 	command! -nargs=0 DirvishHere call s:dirvish_here()
+	autocmd FileType java setlocal omnifunc=javacomplete#Complete
 endfunction
 
 autocmd VimEnter * nested call s:settings()
