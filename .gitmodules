@@ -40,3 +40,12 @@
 [submodule "pack/pack/start/vim-alignta"]
 	path = pack/pack/start/vim-alignta
 	url = https://github.com/h1mesuke/vim-alignta.git
+[submodule "pack\\pack\\start\\javacomplete"]
+	path = pack\\pack\\start\\javacomplete
+	url = https://github.com/vim-scripts/javacomplete.git
+[submodule "pack\\pack\\start\\memolist.vim"]
+	path = pack\\pack\\start\\memolist.vim
+	url = https://github.com/glidenote/memolist.vim.git
+[submodule "pack\\pack\\start\\ctrlp-memolist.vim"]
+	path = pack\\pack\\start\\ctrlp-memolist.vim
+	url = https://github.com/sgur/ctrlp-memolist.vim.git
