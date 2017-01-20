@@ -106,6 +106,10 @@ function! s:set_java_setting()
 	setlocal listchars=tab:>_,trail:-,eol:$
 	setlocal fileformat=unix
 	setlocal fileencoding=utf8
+	setlocal omnifunc=javacomplete#Complete
+
+	setlocal wildignore+=*\\build\\*,*/build/*
+	setlocal wildignore+=*.class " java
 endfunction
 autocmd FileType java call s:set_java_setting()
 
