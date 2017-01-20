@@ -150,6 +150,11 @@ function! s:settings()
 	let g:bufferline_rotate = 1
 
 	command! -nargs=0 DirvishHere call s:dirvish_here()
+
+	let g:memolist_path = "$HOME/.memo"
+
 endfunction
 
 autocmd VimEnter * nested call s:settings()
+
+
