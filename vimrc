@@ -125,11 +125,11 @@ noremap ; :
 noremap : ;
 
 function! s:settings()
-	echom 'hello world!'
 	" start ctrlp setting
 	set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 	set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
 	set wildignore+=*\\node_modules\\*,*/node_modules/* " for node.js
+	set wildignore+=*.class
 
 	"let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 	let g:ctrlp_custom_ignore = {
