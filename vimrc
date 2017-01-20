@@ -106,6 +106,10 @@ function! s:set_java_setting()
 	setlocal listchars=tab:>_,trail:-,eol:$
 	setlocal fileformat=unix
 	setlocal fileencoding=utf8
+	setlocal omnifunc=javacomplete#Complete
+
+	setlocal wildignore+=*\\build\\*,*/build/*
+	setlocal wildignore+=*.class " java
 endfunction
 autocmd FileType java call s:set_java_setting()
 
@@ -127,11 +131,11 @@ noremap ; :
 noremap : ;
 
 function! s:settings()
-	echom 'hello world!'
 	" start ctrlp setting
 	set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 	set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
 	set wildignore+=*\\node_modules\\*,*/node_modules/* " for node.js
+	set wildignore+=*.class
 
 	"let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 	let g:ctrlp_custom_ignore = {
@@ -152,7 +156,17 @@ function! s:settings()
 	let g:bufferline_rotate = 1
 
 	command! -nargs=0 DirvishHere call s:dirvish_here()
+
 	autocmd FileType java setlocal omnifunc=javacomplete#Complete
+
+	let g:memolist_path = "$HOME/.memo"
+
+	let res = system("files -v")
+	if res !~ '^flag provided'
+		:call system("go get github.com/mattn/files")
+	endif
+	let g:ctrlp_user_command = 'files -a %s'
+
 endfunction
 
 autocmd VimEnter * nested call s:settings()
