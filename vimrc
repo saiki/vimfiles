@@ -109,6 +109,12 @@ function! s:set_java_setting()
 endfunction
 autocmd FileType java call s:set_java_setting()
 
+function! s:set_go_setting()
+	setlocal fileencoding=utf8
+	setlocal fileformat=unix
+endfunction
+autocmd FileType go call s:set_go_setting()
+
 if has("autocmd") && exists("+omnifunc")
 	autocmd Filetype *
 				\	if &omnifunc == "" |
