@@ -55,3 +55,6 @@
 [submodule "pack\\pack\\start\\ctrlp-memolist.vim"]
 	path = pack\\pack\\start\\ctrlp-memolist.vim
 	url = https://github.com/sgur/ctrlp-memolist.vim.git
+[submodule "pack\\pack\\start\\sonictemplate-vim"]
+	path = pack\\pack\\start\\sonictemplate-vim
+	url = https://github.com/mattn/sonictemplate-vim.git
