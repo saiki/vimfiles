@@ -99,7 +99,11 @@ command! -nargs=0 QQ :quitall
 
 set ambiwidth=double
 " colorschme
-colorscheme gruvbox
+colorscheme blue
+if has('gui')
+	colorscheme gruvbox
+endif
+
 
 " java設定
 " 標準クラスのハイライト表示
