@@ -41,6 +41,17 @@ set laststatus=2
 set clipboard+=unnamed
 
 " .swp, .~, .un~\ファイルの作成先
+function! s:mk_tmp_vim_dir()
+	let l:tmp_dir = $HOME . '/tmp'
+	if !isdirectory(l:tmp_dir)
+		call mkdir(l:tmp_dir, 'p')
+	endif
+	let l:tmp_dir = l:tmp_dir . '/vim'
+	if !isdirectory(l:tmp_dir)
+		call mkdir(l:tmp_dir, 'p')
+	endif
+endfunction
+call s:mk_tmp_vim_dir()
 set directory=$HOME/tmp/vim
 set backupdir=$HOME/tmp/vim
 set undodir=$HOME/tmp/vim
