@@ -87,6 +87,7 @@ command! -nargs=0 CdHere call s:cd_here()
 
 function! s:cd_pop()
 	:cd -
+	:pwd
 endfunction
 command! -nargs=0 CdPop call s:cd_pop()
 
