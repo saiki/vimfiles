@@ -34,7 +34,7 @@ set cursorline
 " ルーラの表示
 set ruler
 " コマンド行の高さ
-set cmdheight=2
+set cmdheight=1
 " statulineを表示
 set laststatus=2
 " 無名レジスタの内容を*レジスタにも入れる(要するにヤンクしたらクリップボードにコピー)
