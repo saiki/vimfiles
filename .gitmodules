@@ -58,3 +58,6 @@
 [submodule "pack\\pack\\start\\sonictemplate-vim"]
 	path = pack\\pack\\start\\sonictemplate-vim
 	url = https://github.com/mattn/sonictemplate-vim.git
+[submodule "pack\\pack\\start\\vim-easymotion"]
+	path = pack\\pack\\start\\vim-easymotion
+	url = https://github.com/easymotion/vim-easymotion.git
