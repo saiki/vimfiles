@@ -1,5 +1,5 @@
 " フォント設定
-set guifont=Ricty_Diminished_Discord:h11:cSHIFTJIS
+set guifont=MS_Gothic:h11:cSHIFTJIS
 set ambiwidth=double
 "set encoding=utf8
 set antialias
@@ -31,4 +31,4 @@ set columns=100
 "set columns=109
 
 " 透過の設定
-autocmd GUIEnter * set transparency=220
+"autocmd GUIEnter * set transparency=220
