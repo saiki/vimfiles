@@ -40,24 +40,27 @@
 [submodule "pack/pack/start/vim-alignta"]
 	path = pack/pack/start/vim-alignta
 	url = https://github.com/h1mesuke/vim-alignta.git
-[submodule "pack\\pack\\start\\typescript-tools.vim"]
-	path = pack\\pack\\start\\typescript-tools.vim
+[submodule "pack/pack/start/typescript-tools.vim"]
+	path = pack/pack/start/typescript-tools.vim
 	url = https://github.com/clausreinke/typescript-tools.vim.git
 [submodule "pack/pack/start/vim-javacomplete2"]
 	path = pack/pack/start/vim-javacomplete2
 	url = https://github.com/artur-shaik/vim-javacomplete2.git
-[submodule "pack\\pack\\start\\javacomplete"]
-	path = pack\\pack\\start\\javacomplete
+[submodule "pack/pack/start/javacomplete"]
+	path = pack/pack/start/javacomplete
 	url = https://github.com/vim-scripts/javacomplete.git
-[submodule "pack\\pack\\start\\memolist.vim"]
-	path = pack\\pack\\start\\memolist.vim
+[submodule "pack/pack/start/memolist.vim"]
+	path = pack/pack/start/memolist.vim
 	url = https://github.com/glidenote/memolist.vim.git
-[submodule "pack\\pack\\start\\ctrlp-memolist.vim"]
-	path = pack\\pack\\start\\ctrlp-memolist.vim
+[submodule "pack/pack/start/ctrlp-memolist.vim"]
+	path = pack/pack/start/ctrlp-memolist.vim
 	url = https://github.com/sgur/ctrlp-memolist.vim.git
-[submodule "pack\\pack\\start\\sonictemplate-vim"]
-	path = pack\\pack\\start\\sonictemplate-vim
+[submodule "pack/pack/start/sonictemplate-vim"]
+	path = pack/pack/start/sonictemplate-vim
 	url = https://github.com/mattn/sonictemplate-vim.git
-[submodule "pack\\pack\\start\\vim-easymotion"]
-	path = pack\\pack\\start\\vim-easymotion
+[submodule "pack/pack/start/vim-easymotion"]
+	path = pack/pack/start/vim-easymotion
 	url = https://github.com/easymotion/vim-easymotion.git
+[submodule "pack/pack/start/typescript-vim"]
+	path = pack/pack/start/typescript-vim
+	url = https:///github.com/leafgarland/typescript-vim.git
