@@ -46,9 +46,6 @@
 [submodule "pack/pack/start/vim-javacomplete2"]
 	path = pack/pack/start/vim-javacomplete2
 	url = https://github.com/artur-shaik/vim-javacomplete2.git
-[submodule "pack/pack/start/javacomplete"]
-	path = pack/pack/start/javacomplete
-	url = https://github.com/vim-scripts/javacomplete.git
 [submodule "pack/pack/start/memolist.vim"]
 	path = pack/pack/start/memolist.vim
 	url = https://github.com/glidenote/memolist.vim.git
