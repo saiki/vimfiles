@@ -177,12 +177,6 @@ function! s:settings()
 
 	let g:memolist_path = "$HOME/.memo"
 
-	let res = system("files -v")
-	if res !~ '^flag provided'
-		:call system("go get github.com/mattn/files")
-	endif
-	let g:ctrlp_user_command = 'files -a %s'
-
 endfunction
 
 autocmd VimEnter * nested call s:settings()
