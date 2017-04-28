@@ -7,7 +7,7 @@ set antialias
 " colorscheme
 "colorscheme molokai
 "colorscheme gruvbox
-colorscheme gruvbox
+colorscheme solarized
 "colorscheme PerfectDark
 "set background=light
 set background=dark

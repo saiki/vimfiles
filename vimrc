@@ -98,10 +98,10 @@ endfunction
 command! -nargs=0 QQ :quitall
 
 set ambiwidth=double
-" colorschme
+" colorscheme
 colorscheme blue
 if has('gui')
-	colorscheme gruvbox
+	colorscheme solarized
 endif
 
 
