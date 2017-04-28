@@ -61,3 +61,6 @@
 [submodule "pack/pack/start/emmet-vim"]
 	path = pack/pack/start/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
+[submodule "pack\\pack\\start\\vim-colors-solarized"]
+	path = pack\\pack\\start\\vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized
