@@ -98,12 +98,6 @@ endfunction
 command! -nargs=0 QQ :quitall
 
 set ambiwidth=double
-" colorscheme
-colorscheme blue
-if has('gui')
-	colorscheme solarized
-endif
-
 
 " java設定
 " 標準クラスのハイライト表示
