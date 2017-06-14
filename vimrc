@@ -63,6 +63,7 @@ vmap $ $h
 nnoremap <C-t>t :tabnew<CR>
 nnoremap <C-t>n :tabnext<CR>
 nnoremap <C-t>p :tabprevious<CR>
+nnoremap <C-t>e :tabedit ./
 
 " 独自関数群
 " Open junk file.
@@ -109,9 +110,6 @@ set ambiwidth=double
 " メソッドの宣言文のハイライト表示
 :let java_highlight_functions=1
 function! s:set_java_setting()
-	setlocal tabstop=8
-	setlocal shiftwidth=4
-	setlocal softtabstop=4
 	setlocal list
 	setlocal listchars=tab:>_,trail:-,eol:$
 	setlocal fileformat=unix
