@@ -6,7 +6,6 @@ filetype plugin indent on
 set showcmd
 " 閉じ括弧が入力されたときに対応する括弧にわずかの間ジャンプする。
 set showmatch
-set cmdheight=2
 " 折りたたみ設定
 "set foldmethod=syntax
 set foldmethod=marker
@@ -37,6 +36,8 @@ set ruler
 set cmdheight=1
 " statulineを表示
 set laststatus=2
+" タブを常に表示
+set showtabline=2
 " 無名レジスタの内容を*レジスタにも入れる(要するにヤンクしたらクリップボードにコピー)
 set clipboard+=unnamed
 
