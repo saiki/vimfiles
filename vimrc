@@ -21,9 +21,9 @@ set wrapscan
 set smartindent
 
 " タブ幅の指定
-set softtabstop=2
-set shiftwidth=2
-set tabstop=2
+set softtabstop=4
+set shiftwidth=4
+set tabstop=4
 " タブをスペースに変換しない
 set noexpandtab
 " 行数の表示
