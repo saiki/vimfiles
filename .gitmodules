@@ -61,3 +61,6 @@
 [submodule "pack/pack/start/vim-colors-solarized"]
 	path = pack/pack/start/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "pack/pack/start/vim-javacomplete2"]
+	path = pack/pack/start/vim-javacomplete2
+	url = https://github.com/artur-shaik/vim-javacomplete2.git
