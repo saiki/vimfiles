@@ -170,6 +170,11 @@ function! s:settings()
 
 	let g:memolist_path = "$HOME/.memo"
 
+	if filereadable('private.vim')
+		source private.vim
+	endif
+
+
 endfunction
 
 autocmd VimEnter * nested call s:settings()
