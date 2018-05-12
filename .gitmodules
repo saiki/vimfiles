@@ -43,12 +43,6 @@
 [submodule "pack/pack/start/typescript-tools.vim"]
 	path = pack/pack/start/typescript-tools.vim
 	url = https://github.com/clausreinke/typescript-tools.vim.git
-[submodule "pack/pack/start/vim-javacomplete2"]
-	path = pack/pack/start/vim-javacomplete2
-	url = https://github.com/artur-shaik/vim-javacomplete2.git
-[submodule "pack/pack/start/javacomplete"]
-	path = pack/pack/start/javacomplete
-	url = https://github.com/vim-scripts/javacomplete.git
 [submodule "pack/pack/start/memolist.vim"]
 	path = pack/pack/start/memolist.vim
 	url = https://github.com/glidenote/memolist.vim.git
@@ -64,3 +58,9 @@
 [submodule "pack/pack/start/emmet-vim"]
 	path = pack/pack/start/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
+[submodule "pack/pack/start/vim-colors-solarized"]
+	path = pack/pack/start/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "pack/pack/start/vim-javacomplete2"]
+	path = pack/pack/start/vim-javacomplete2
+	url = https://github.com/artur-shaik/vim-javacomplete2.git

@@ -6,7 +6,6 @@ filetype plugin indent on
 set showcmd
 " 閉じ括弧が入力されたときに対応する括弧にわずかの間ジャンプする。
 set showmatch
-set cmdheight=2
 " 折りたたみ設定
 "set foldmethod=syntax
 set foldmethod=marker
@@ -22,9 +21,9 @@ set wrapscan
 set smartindent
 
 " タブ幅の指定
-set softtabstop=2
-set shiftwidth=2
-set tabstop=2
+set softtabstop=4
+set shiftwidth=4
+set tabstop=4
 " タブをスペースに変換しない
 set noexpandtab
 " 行数の表示
@@ -37,6 +36,8 @@ set ruler
 set cmdheight=1
 " statulineを表示
 set laststatus=2
+" タブを常に表示
+set showtabline=2
 " 無名レジスタの内容を*レジスタにも入れる(要するにヤンクしたらクリップボードにコピー)
 set clipboard+=unnamed
 
@@ -63,6 +64,7 @@ vmap $ $h
 nnoremap <C-t>t :tabnew<CR>
 nnoremap <C-t>n :tabnext<CR>
 nnoremap <C-t>p :tabprevious<CR>
+nnoremap <C-t>e :tabedit ./
 
 " 独自関数群
 " Open junk file.
@@ -109,9 +111,6 @@ set ambiwidth=double
 " メソッドの宣言文のハイライト表示
 :let java_highlight_functions=1
 function! s:set_java_setting()
-	setlocal tabstop=8
-	setlocal shiftwidth=4
-	setlocal softtabstop=4
 	setlocal list
 	setlocal listchars=tab:>_,trail:-,eol:$
 	setlocal fileformat=unix
@@ -167,11 +166,10 @@ function! s:settings()
 
 	let g:memolist_path = "$HOME/.memo"
 
-	let res = system("files -v")
-	if res !~ '^flag provided'
-		:call system("go get github.com/mattn/files")
+	if filereadable('private.vim')
+		source private.vim
 	endif
-	let g:ctrlp_user_command = 'files -a %s'
+
 
 endfunction
 
