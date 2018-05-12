@@ -98,12 +98,6 @@ endfunction
 command! -nargs=0 QQ :quitall
 
 set ambiwidth=double
-" colorschme
-colorscheme blue
-if has('gui')
-	colorscheme gruvbox
-endif
-
 
 " java設定
 " 標準クラスのハイライト表示
@@ -141,10 +135,6 @@ if has("autocmd") && exists("+omnifunc")
 				\		setlocal omnifunc=syntaxcomplete#Complete |
 				\	endif
 endif
-
-" 近いほうを使う
-noremap ; :
-noremap : ;
 
 function! s:settings()
 	" start ctrlp setting
@@ -184,5 +174,10 @@ function! s:settings()
 	let g:ctrlp_user_command = 'files -a %s'
 
 endfunction
+
+if has('mac')
+	nnoremap ; :
+	nnoremap : ;
+endif
 
 autocmd VimEnter * nested call s:settings()
