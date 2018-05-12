@@ -174,8 +174,8 @@ function! s:settings()
 endfunction
 
 if has('mac')
-	nnoremap ; :
 	nnoremap : ;
+	nnoremap ; :
 endif
 
 autocmd VimEnter * nested call s:settings()
