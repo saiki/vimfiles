@@ -61,3 +61,9 @@
 [submodule "pack/pack/start/vim-colors-solarized"]
 	path = pack/pack/start/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "pack/pack/start/vim-lsp"]
+	path = pack/pack/start/vim-lsp
+	url = https://github.com/prabirshrestha/vim-lsp.git
+[submodule "pack/pack/start/async.vim"]
+	path = pack/pack/start/async.vim
+	url = https://github.com/prabirshrestha/async.vim.git
