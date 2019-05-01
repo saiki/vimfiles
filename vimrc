@@ -149,6 +149,8 @@ if has("autocmd") && exists("+omnifunc")
 				\	endif
 endif
 
+autocmd FileType typescript setlocal completeopt-=menu
+
 function! s:settings()
 	" start ctrlp setting
 	set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux

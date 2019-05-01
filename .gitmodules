@@ -67,3 +67,6 @@
 [submodule "pack/pack/start/typescript-vim"]
 	path = pack/pack/start/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "pack/pack/start/tsuquyomi"]
+	path = pack/pack/start/tsuquyomi
+	url = https://github.com/Quramy/tsuquyomi.git
