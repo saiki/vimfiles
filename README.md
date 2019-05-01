@@ -14,3 +14,9 @@ update submodule
 ```
 git submodule foreach git pull origin master
 ```
+
+add submodule
+
+```
+~/.vim> git submodule add <url> pack/pack/start/<module_name>
+```
