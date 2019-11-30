@@ -21,11 +21,11 @@ set wrapscan
 set smartindent
 
 " タブ幅の指定
-set softtabstop=4
-set shiftwidth=4
-set tabstop=4
+set softtabstop=2
+set shiftwidth=2
+set tabstop=2
 " タブをスペースに変換しない
-set noexpandtab
+set expandtab
 " 行数の表示
 set number
 " 現在行の強調表示
@@ -39,10 +39,15 @@ set laststatus=2
 " タブを常に表示
 set showtabline=2
 " 無名レジスタの内容を*レジスタにも入れる(要するにヤンクしたらクリップボードにコピー)
-set clipboard+=unnamed
+set clipboard&
+set clipboard^=unnamed
+if has('unnamedplus')
+	set clipboard^=unnamedplus
+endif
+
 
 " .swp, .~, .un~\ファイルの作成先
-function! s:mk_tmp_vim_dir()
+function s:mk_tmp_vim_dir()
 	let l:tmp_dir = $HOME . '/tmp'
 	if !isdirectory(l:tmp_dir)
 		call mkdir(l:tmp_dir, 'p')
@@ -93,10 +98,6 @@ function! s:cd_pop()
 endfunction
 command! -nargs=0 CdPop call s:cd_pop()
 
-function! s:dirvish_here()
-	:Dirvish %:p:h
-endfunction
-
 command! -nargs=0 QQ :quitall
 
 set ambiwidth=double
@@ -122,11 +123,6 @@ function! s:set_java_setting()
 endfunction
 autocmd FileType java call s:set_java_setting()
 
-function! s:set_go_setting()
-	setlocal fileencoding=utf8
-	setlocal fileformat=unix
-endfunction
-
 augroup LspGo
   au!
   autocmd User lsp_setup call lsp#register_server({
@@ -135,11 +131,12 @@ augroup LspGo
       \ 'whitelist': ['go'],
       \ })
   autocmd FileType go setlocal omnifunc=lsp#complete
-  "autocmd FileType go nmap <buffer> gd <plug>(lsp-definition)
-  "autocmd FileType go nmap <buffer> ,n <plug>(lsp-next-error)
-  "autocmd FileType go nmap <buffer> ,p <plug>(lsp-previous-error)
 augroup END
 
+function! s:set_go_setting()
+	setlocal fileencoding=utf8
+	setlocal fileformat=unix
+endfunction
 autocmd FileType go call s:set_go_setting()
 
 if has("autocmd") && exists("+omnifunc")
@@ -150,42 +147,41 @@ if has("autocmd") && exists("+omnifunc")
 endif
 
 autocmd FileType typescript setlocal completeopt-=menu
+autocmd FileType typescript setlocal backupcopy=yes
+autocmd FileType * setlocal backupcopy=yes
 
-function! s:settings()
-	" start ctrlp setting
-	set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
-	set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
-	set wildignore+=*\\node_modules\\*,*/node_modules/* " for node.js
-	set wildignore+=*.class
+" start ctrlp setting
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+set wildignore+=*\\node_modules\\*,*/node_modules/* " for node.js
+set wildignore+=*.class
 
-	"let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-	let g:ctrlp_custom_ignore = {
-				\ 'dir':  '\v[\/]\.(git|hg|svn)$',
-				\ 'file': '\v\.(exe|so|dll|class|jar|war)$'
-				\ }
+"let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore = {
+			\ 'dir':  '\v[\/]\.(git|hg|svn)$',
+			\ 'file': '\v\.(exe|so|dll|class|jar|war)$'
+			\ }
 
-	" マルチバイト対応
-	let g:ctrlp_key_loop = 1
-	" end ctrlp setting
+" マルチバイト対応
+let g:ctrlp_key_loop = 1
+" end ctrlp setting
 
-	" bufferline
-	let g:bufferline_echo = 1
-	let g:bufferline_active_buffer_left = '['
-	let g:bufferline_active_buffer_right = ']'
-	let g:bufferline_modified = '+'
-	let g:bufferline_show_bufnr = 1
-	let g:bufferline_rotate = 1
+" bufferline
+let g:bufferline_echo = 1
+let g:bufferline_active_buffer_left = '['
+let g:bufferline_active_buffer_right = ']'
+let g:bufferline_modified = '+'
+let g:bufferline_show_bufnr = 1
+let g:bufferline_rotate = 1
 
-	command! -nargs=0 DirvishHere call s:dirvish_here()
-
-	autocmd FileType java setlocal omnifunc=javacomplete#Complete
-
-	let g:memolist_path = "$HOME/.memo"
-
-	if filereadable('private.vim')
-		source private.vim
-	endif
-
+function! s:dirvish_here()
+	:Dirvish %:p:h
 endfunction
 
-autocmd VimEnter * nested call s:settings()
+command! -nargs=0 DirvishHere call s:dirvish_here()
+
+let g:memolist_path = "$HOME/.memo"
+
+if filereadable('private.vim')
+	source private.vim
+endif
