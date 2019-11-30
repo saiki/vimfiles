@@ -1,5 +1,5 @@
 " フォント設定
-set guifont=MS_Gothic:h11:cSHIFTJIS
+"set guifont=MS_Gothic:h11:cSHIFTJIS
 set ambiwidth=double
 "set encoding=utf8
 set antialias
