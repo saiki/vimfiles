@@ -177,8 +177,12 @@ let g:bufferline_rotate = 1
 function! s:dirvish_here()
 	:Dirvish %:p:h
 endfunction
-
 command! -nargs=0 DirvishHere call s:dirvish_here()
+
+let g:loaded_netrwPlugin = 1
+command! -nargs=? -complete=dir Explore Dirvish <args>
+command! -nargs=? -complete=dir Sexplore belowright split | silent Dirvish <args>
+command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args>
 
 let g:memolist_path = "$HOME/.memo"
 
