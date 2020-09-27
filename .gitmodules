@@ -14,13 +14,13 @@
 	path = pack/pack/start/vim-dirvish
 	url = https://github.com/justinmk/vim-dirvish
 [submodule "pack/pack/start/ctrlp.vim"]
-	path = pack/pack/start/ctrlp.vim
+	path = pack/ctrlp/start/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule "pack/pack/start/ctrlp-extensions.vim"]
-	path = pack/pack/start/ctrlp-extensions.vim
+	path = pack/ctrlp/start/ctrlp-extensions.vim
 	url = https://github.com/sgur/ctrlp-extensions.vim
 [submodule "pack/pack/start/ctrlp-funky"]
-	path = pack/pack/start/ctrlp-funky
+	path = pack/ctrlp/start/ctrlp-funky
 	url = https://github.com/tacahiroy/ctrlp-funky
 [submodule "pack/pack/start/vim-localrc"]
 	path = pack/pack/start/vim-localrc
@@ -44,7 +44,7 @@
 	path = pack/pack/start/memolist.vim
 	url = https://github.com/glidenote/memolist.vim.git
 [submodule "pack/pack/start/ctrlp-memolist.vim"]
-	path = pack/pack/start/ctrlp-memolist.vim
+	path = pack/ctrlp/start/ctrlp-memolist.vim
 	url = https://github.com/sgur/ctrlp-memolist.vim.git
 [submodule "pack/pack/start/sonictemplate-vim"]
 	path = pack/pack/start/sonictemplate-vim
