@@ -5,7 +5,7 @@
 	path = pack/pack/start/vim-surround
 	url = https://github.com/tpope/vim-surround
 [submodule "pack/pack/start/vim-markdown"]
-	path = pack/pack/start/vim-markdown
+	path = pack/lang/start/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown
 [submodule "pack/pack/start/vim-better-whitespace"]
 	path = pack/pack/start/vim-better-whitespace
@@ -59,7 +59,7 @@
 	path = pack/colorscheme/start/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "pack/pack/start/vim-lsp"]
-	path = pack/pack/start/vim-lsp
+	path = pack/lang/start/vim-lsp
 	url = https://github.com/prabirshrestha/vim-lsp.git
 [submodule "pack/pack/start/async.vim"]
 	path = pack/util/start/async.vim
