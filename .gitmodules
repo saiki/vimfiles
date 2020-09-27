@@ -26,7 +26,7 @@
 	path = pack/pack/start/vim-localrc
 	url = https://github.com/thinca/vim-localrc
 [submodule "pack/pack/start/vim-go"]
-	path = pack/pack/start/vim-go
+	path = pack/lang/start/vim-go
 	url = https://github.com/fatih/vim-go
 [submodule "pack/pack/start/lightline.vim"]
 	path = pack/pack/start/lightline.vim
@@ -53,7 +53,7 @@
 	path = pack/pack/start/vim-easymotion
 	url = https://github.com/easymotion/vim-easymotion.git
 [submodule "pack/pack/start/emmet-vim"]
-	path = pack/pack/start/emmet-vim
+	path = pack/lang/start/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
 [submodule "pack/pack/start/vim-colors-solarized"]
 	path = pack/colorscheme/start/vim-colors-solarized
@@ -65,11 +65,11 @@
 	path = pack/util/start/async.vim
 	url = https://github.com/prabirshrestha/async.vim.git
 [submodule "pack/pack/start/typescript-vim"]
-	path = pack/pack/start/typescript-vim
+	path = pack/lang/start/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
 [submodule "pack/pack/start/tsuquyomi"]
-	path = pack/pack/start/tsuquyomi
+	path = pack/lang/start/tsuquyomi
 	url = https://github.com/Quramy/tsuquyomi.git
 [submodule "pack/pack/start/omnisharp-vim"]
-	path = pack/pack/start/omnisharp-vim
+	path = pack/lang/start/omnisharp-vim
 	url = https://github.com/OmniSharp/omnisharp-vim.git
