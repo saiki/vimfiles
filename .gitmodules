@@ -29,10 +29,10 @@
 	path = pack/lang/start/vim-go
 	url = https://github.com/fatih/vim-go
 [submodule "pack/pack/start/lightline.vim"]
-	path = pack/pack/start/lightline.vim
+	path = pack/decoration/start/lightline.vim
 	url = https://github.com/itchyny/lightline.vim
 [submodule "pack/pack/start/vim-bufferline"]
-	path = pack/pack/start/vim-bufferline
+	path = pack/decoration/start/vim-bufferline
 	url = https://github.com/bling/vim-bufferline
 [submodule "pack/pack/start/gruvbox"]
 	path = pack/colorscheme/start/gruvbox
