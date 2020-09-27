@@ -1,17 +1,17 @@
 [submodule "pack/pack/start/echodoc"]
-	path = pack/pack/start/echodoc
+	path = pack/util/start/echodoc
 	url = https://github.com/Shougo/echodoc
 [submodule "pack/pack/start/vim-surround"]
-	path = pack/pack/start/vim-surround
+	path = pack/util/start/vim-surround
 	url = https://github.com/tpope/vim-surround
 [submodule "pack/pack/start/vim-markdown"]
 	path = pack/lang/start/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown
 [submodule "pack/pack/start/vim-better-whitespace"]
-	path = pack/pack/start/vim-better-whitespace
+	path = pack/util/start/vim-better-whitespace
 	url = https://github.com/ntpeters/vim-better-whitespace
 [submodule "pack/pack/start/vim-dirvish"]
-	path = pack/pack/start/vim-dirvish
+	path = pack/filer/start/vim-dirvish
 	url = https://github.com/justinmk/vim-dirvish
 [submodule "pack/pack/start/ctrlp.vim"]
 	path = pack/ctrlp/start/ctrlp.vim
@@ -23,7 +23,7 @@
 	path = pack/ctrlp/start/ctrlp-funky
 	url = https://github.com/tacahiroy/ctrlp-funky
 [submodule "pack/pack/start/vim-localrc"]
-	path = pack/pack/start/vim-localrc
+	path = pack/util/start/vim-localrc
 	url = https://github.com/thinca/vim-localrc
 [submodule "pack/pack/start/vim-go"]
 	path = pack/lang/start/vim-go
@@ -38,19 +38,19 @@
 	path = pack/colorscheme/start/gruvbox
 	url = https://github.com/morhetz/gruvbox
 [submodule "pack/pack/start/vim-alignta"]
-	path = pack/pack/start/vim-alignta
+	path = pack/util/start/vim-alignta
 	url = https://github.com/h1mesuke/vim-alignta.git
 [submodule "pack/pack/start/memolist.vim"]
-	path = pack/pack/start/memolist.vim
+	path = pack/util/start/memolist.vim
 	url = https://github.com/glidenote/memolist.vim.git
 [submodule "pack/pack/start/ctrlp-memolist.vim"]
 	path = pack/ctrlp/start/ctrlp-memolist.vim
 	url = https://github.com/sgur/ctrlp-memolist.vim.git
 [submodule "pack/pack/start/sonictemplate-vim"]
-	path = pack/pack/start/sonictemplate-vim
+	path = pack/util/start/sonictemplate-vim
 	url = https://github.com/mattn/sonictemplate-vim.git
 [submodule "pack/pack/start/vim-easymotion"]
-	path = pack/pack/start/vim-easymotion
+	path = pack/util/start/vim-easymotion
 	url = https://github.com/easymotion/vim-easymotion.git
 [submodule "pack/pack/start/emmet-vim"]
 	path = pack/lang/start/emmet-vim
