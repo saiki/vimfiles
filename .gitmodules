@@ -73,6 +73,6 @@
 [submodule "pack/pack/start/omnisharp-vim"]
 	path = pack/lang/start/omnisharp-vim
 	url = https://github.com/OmniSharp/omnisharp-vim.git
-[submodule ".\\pack\\filer\\start\\nerdtree"]
-	path = .\\pack\\filer\\start\\nerdtree
+[submodule "pack/filer/start/nerdtree"]
+	path = pack/filer/start/nerdtree
 	url = https://github.com/preservim/nerdtree.git
