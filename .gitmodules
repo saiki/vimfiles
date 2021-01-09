@@ -76,3 +76,6 @@
 [submodule "pack/filer/start/nerdtree"]
 	path = pack/filer/start/nerdtree
 	url = https://github.com/preservim/nerdtree.git
+[submodule "pack/util/start/vim-lsp-settings"]
+	path = pack/util/start/vim-lsp-settings
+	url = https://github.com/mattn/vim-lsp-settings.git
