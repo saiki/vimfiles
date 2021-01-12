@@ -15,14 +15,14 @@ jobs:
         uses: actions/checkout@v2
         with:
           submodules: true
-      - name: Checkout submodules
-        run: |
-          auth_header="$(git config --local --get http.https://github.com/.extraheader)"
-          git submodule sync --recursive
-          git -c "http.extraheader=$auth_header" -c protocol.version=2 submodule update --init --force --recursive --depth=1
+          #      - name: Checkout submodules
+          #        run: |
+          #          auth_header="$(git config --local --get http.https://github.com/.extraheader)"
+          #          git submodule sync --recursive
+          #          git -c "http.extraheader=$auth_header" -c protocol.version=2 submodule update --init --force --recursive --depth=1
       - name: Build project # This would actually build your project, using zip for an example artifact
         run: |
-          zip vimfiles README.md vimrc gvimrc pack/**/*
+          zip -r vimfiles.zip README.md vimrc gvimrc pack
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
