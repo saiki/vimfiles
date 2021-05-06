@@ -82,3 +82,6 @@
 [submodule "pack/lang/start/vim-svelte"]
 	path = pack/lang/start/vim-svelte
 	url = https://github.com/evanleck/vim-svelte.git
+[submodule ".\\pack\\util\\start\\preview-markdown.vim"]
+	path = .\\pack\\util\\start\\preview-markdown.vim
+	url = https://github.com/skanehira/preview-markdown.vim.git

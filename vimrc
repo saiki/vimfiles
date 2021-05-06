@@ -1,6 +1,7 @@
 set nocompatible
 syntax on
 filetype plugin indent on
+set encoding=utf8
 
 " タイプ途中のコマンドを画面最下行に表示
 set showcmd
@@ -189,3 +190,5 @@ let g:memolist_path = "$HOME/.memo"
 if filereadable('private.vim')
 	source private.vim
 endif
+
+let g:preview_markdown_parser='glow'
