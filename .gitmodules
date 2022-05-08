@@ -25,9 +25,6 @@
 [submodule "pack/pack/start/vim-localrc"]
 	path = pack/util/start/vim-localrc
 	url = https://github.com/thinca/vim-localrc
-[submodule "pack/pack/start/vim-go"]
-	path = pack/lang/start/vim-go
-	url = https://github.com/fatih/vim-go
 [submodule "pack/pack/start/lightline.vim"]
 	path = pack/decoration/start/lightline.vim
 	url = https://github.com/itchyny/lightline.vim
