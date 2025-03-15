@@ -1,7 +1,41 @@
+packadd vim-jetpack
+call jetpack#begin()
+Jetpack 'tani/vim-jetpack', {'opt': 1} "bootstrap
+Jetpack 'morhetz/gruvbox'
+Jetpack 'altercation/vim-colors-solarized'
+Jetpack 'sgur/ctrlp-extensions.vim'
+Jetpack 'tacahiroy/ctrlp-funky'
+Jetpack 'sgur/ctrlp-memolist.vim'
+Jetpack 'ctrlpvim/ctrlp.vim'
+Jetpack 'itchyny/lightline.vim'
+Jetpack 'bling/vim-bufferline'
+Jetpack 'preservim/nerdtree'
+Jetpack 'justinmk/vim-dirvish'
+Jetpack 'mattn/emmet-vim'
+Jetpack 'mattn/emmet-vim'
+Jetpack 'OmniSharp/omnisharp-vim'
+Jetpack 'Quramy/tsuquyomi'
+Jetpack 'leafgarland/typescript-vim'
+Jetpack 'prabirshrestha/vim-lsp'
+Jetpack 'plasticboy/vim-markdown'
+Jetpack 'prabirshrestha/async.vim'
+Jetpack 'Shougo/echodoc'
+Jetpack 'glidenote/memolist.vim'
+Jetpack 'skanehira/preview-markdown.vim'
+Jetpack 'mattn/sonictemplate-vim'
+Jetpack 'h1mesuke/vim-alignta'
+Jetpack 'ntpeters/vim-better-whitespace'
+Jetpack 'easymotion/vim-easymotion'
+Jetpack 'thinca/vim-localrc'
+Jetpack 'mattn/vim-lsp-settings'
+Jetpack 'tpope/vim-surround'
+call jetpack#end()
+
 set nocompatible
 syntax on
 filetype plugin indent on
 set encoding=utf8
+set shell=powershell
 
 " タイプ途中のコマンドを画面最下行に表示
 set showcmd
